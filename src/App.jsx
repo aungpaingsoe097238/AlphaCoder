@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import Hobbies from "./components/Hobbies";
 import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
         <Hobbies />
         <div className="w-[70%] mx-auto ">
           <Services />
-          <Gallery/>
+          <Gallery />
+          <Contact />
         </div>
       </div>
     </>
