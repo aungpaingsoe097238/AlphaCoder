@@ -3,6 +3,7 @@ import { CgArrowLongRightC, CgArrowLongLeftC } from "react-icons/cg";
 import { BsMouse } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Typewriter from "typewriter-effect";
+import { BsFacebook, BsInstagram, BsGithub } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -52,6 +53,27 @@ const Home = () => {
           </a>
         </div>
       </div>
+      {/* Social */}
+      <div className=" absolute left-5 ">
+        <ul className=" flex flex-col gap-4">
+          <li>
+            <a href="">
+              <BsFacebook className="text-xl cursor-pointer" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <BsInstagram className="text-xl cursor-pointer" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <BsGithub className="text-xl cursor-pointer" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      {/* Social */}
     </div>
   );
 };

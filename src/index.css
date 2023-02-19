@@ -38,7 +38,7 @@ html {
   z-index: -1;
 }
 
-.moti{
+.moti {
   display: flex;
   width: 100%;
   height: 200px;
@@ -64,6 +64,44 @@ html {
   z-index: -1;
 }
 
+.hobbies{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/images/wallpaper/studygirl4.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.hobbies::before {
+  content: "";
+  background: #c94b4b;
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+  background: linear-gradient(to right, #4b134f, #c94b4b);
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+/*Gallery*/
+.gallery{
+  columns: 3;
+}
+
+.gallery img{
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
 
 /* CSS */
 .button-89 {
@@ -143,3 +181,4 @@ html {
     padding: 13px 50px 13px;
   }
 }
+

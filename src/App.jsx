@@ -4,6 +4,10 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Moti from "./components/Moti";
 import Skill from "./components/Skill";
+import Portfolio from "./components/Portfolio";
+import Services from "./components/Services";
+import Hobbies from "./components/Hobbies";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -16,7 +20,12 @@ function App() {
         </div>
         <Moti />
         <div className="w-[70%] mx-auto ">
-          <Skill />
+          <Portfolio />
+        </div>
+        <Hobbies />
+        <div className="w-[70%] mx-auto ">
+          <Services />
+          <Gallery/>
         </div>
       </div>
     </>
