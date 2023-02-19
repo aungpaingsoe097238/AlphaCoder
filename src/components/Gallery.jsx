@@ -30,14 +30,14 @@ const Gallery = () => {
         History is become a life of a part.
       </p>
       <div class="gallery">
-        <img src={ k1 } className=" aspect-video" alt="" />
-        <img src={ k2 } className=" aspect-video" alt="" />
-        <img src={ k16 } className="aspect-square" alt="" />
-        <img src={ k5 } className=" aspect-square" alt="" />
-        <img src={ k11 } className=" aspect-square" alt="" />
-        <img src={ k12 } className=" aspect-square" alt="" />
-        <img src={ k14 } className=" aspect-video" alt="" />
-        <img src={ k15 } className=" aspect-video" alt="" />
+        <img src={ k1 } className=" aspect-video  cursor-zoom-in" alt="" />
+        <img src={ k2 } className=" aspect-video cursor-zoom-in" alt="" />
+        <img src={ k16 } className="aspect-square cursor-zoom-in" alt="" />
+        <img src={ k5 } className=" aspect-square cursor-zoom-in" alt="" />
+        <img src={ k11 } className=" aspect-square cursor-zoom-in" alt="" />
+        <img src={ k12 } className=" aspect-square cursor-zoom-in" alt="" />
+        <img src={ k14 } className=" aspect-video cursor-zoom-in" alt="" />
+        <img src={ k15 } className=" aspect-video cursor-zoom-in" alt="" />
       </div>
     </div>
   );
