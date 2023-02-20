@@ -1,35 +1,17 @@
-import { useEffect } from "react";
-import About from "./components/About";
-import Home from "./components/Home";
-import NavBar from "./components/NavBar";
-import Moti from "./components/Moti";
-import Skill from "./components/Skill";
-import Portfolio from "./components/Portfolio";
-import Services from "./components/Services";
-import Hobbies from "./components/Hobbies";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
+import { Route, Routes } from "react-router";
+import { lazy, Suspense } from "react";
+import Loading from "./components/Loading";
+
+const Home = lazy(() => import("./components/Home"));
 
 function App() {
   return (
     <>
-      <NavBar />
-      <div className="container-fluid">
-        <Home />
-        <div className="w-[70%] mx-auto ">
-          <About />
-        </div>
-        <Moti />
-        <div className="w-[70%] mx-auto ">
-          <Portfolio />
-        </div>
-        <Hobbies />
-        <div className="w-[70%] mx-auto ">
-          <Services />
-          <Gallery />
-          <Contact />
-        </div>
-      </div>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </Suspense>
     </>
   );
 }

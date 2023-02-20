@@ -4,19 +4,24 @@ import { GoHome } from "react-icons/go";
 import { BsCreditCard2Back, BsImages } from "react-icons/bs";
 import { FiActivity } from "react-icons/fi";
 import { GrPersonalComputer } from "react-icons/gr";
+import NoFace from "../assets/images/icons/noface.png";
 
 const NavBar = () => {
   const handleSideBar = () => {
-   let sidebar = document.querySelector(".sidebar");
+    let sidebar = document.querySelector(".sidebar");
     sidebar.classList.remove("animate__slideInRight");
-    sidebar.addEventListener('animationend', _ => sidebar.classList.remove('animate__slideInRight'))
+    sidebar.addEventListener("animationend", (_) =>
+      sidebar.classList.remove("animate__slideInRight")
+    );
     sidebar.classList.toggle("hidden");
   };
 
   return (
     <nav className="w-full py-3 fixed top-0 z-10  bg-transparent ">
       <div className="w-[70%] mx-auto flex justify-between items-center">
-        <div className="text-xl font-semibold">Maw Gyi</div>
+        <div className="text-xl font-semibold">
+          <span>Maw Gyi</span>
+        </div>
         <div>
           <AiOutlineMenu
             className=" text-xl cursor-pointer"

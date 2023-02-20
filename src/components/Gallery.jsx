@@ -24,13 +24,13 @@ import k20 from '../assets/images/kznm/k20.jpg'
 const Gallery = () => {
 
   return (
-    <div className=" my-5 ">
+    <div className=" my-5">
       <Title title="Gallery" subTitle="My Memories"  />  
       <p className=" my-5 text-gray-500 text-sm">
         History is become a life of a part.
       </p>
-      <div class="gallery">
-        <img src={ k1 } className=" aspect-video  cursor-zoom-in" alt="" />
+      <div class="gallery xl:columns-4 ">
+        <img src={ k1 } className=" aspect-video  cursor-zoom-in " alt="" />
         <img src={ k2 } className=" aspect-video cursor-zoom-in" alt="" />
         <img src={ k16 } className="aspect-square cursor-zoom-in" alt="" />
         <img src={ k5 } className=" aspect-square cursor-zoom-in" alt="" />
