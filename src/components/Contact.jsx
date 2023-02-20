@@ -4,7 +4,7 @@ import { GrSend } from "react-icons/gr";
 
 const Contact = () => {
   return (
-    <div className=" mt-60 flex flex-col justify-center contact" id="contact">
+    <div className=" h-screen flex flex-col justify-center contact" id="contact">
       <Title title="Contact" subTitle="Get in touch with me" />
       <span className="my-5"></span>
       <div className="flex gap-5">

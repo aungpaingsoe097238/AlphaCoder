@@ -1,8 +1,9 @@
 import React from "react";
 import { CgGym, CgCode } from "react-icons/cg";
-import { GoBook } from 'react-icons/go'
-import {TbMountain } from 'react-icons/tb'
- 
+import { GoBook } from "react-icons/go";
+import { TbMountain } from "react-icons/tb";
+import { IoFastFoodOutline } from "react-icons/io5";
+
 const Hobbies = () => {
   return (
     <div className="hobbies text-white flex flex-col">
@@ -23,15 +24,21 @@ const Hobbies = () => {
           </div>
         </li>
         <li>
-        <div className="flex gap-1 items-center">
+          <div className="flex gap-1 items-center">
             <GoBook className=" text-xl" />
             Reading
           </div>
         </li>
         <li>
-        <div className="flex gap-1 items-center">
+          <div className="flex gap-1 items-center">
             <TbMountain className=" text-xl" />
-            Hinking
+            Hiking
+          </div>
+        </li>
+        <li>
+          <div className="flex gap-1 items-center">
+            <IoFastFoodOutline className=" text-xl" />
+            Eating
           </div>
         </li>
       </ul>

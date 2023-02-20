@@ -29,7 +29,7 @@ const About = () => {
           <div className=" text-2xl font-semibold mb-2">
             I'm Khaing Zar Ni Maw
           </div>
-          <p className="mb-5">
+          <p className="mb-5 text-slate-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             ab. Non quibusdam itaque perspiciatis mollitia, sint porro! Debitis
             nostrum vero maxime quas illum accusantium laborum. Rerum unde

@@ -55,7 +55,7 @@ const Top = () => {
       </div>
       {/* Social */}
       <div className=" absolute left-5 ">
-        <ul className=" flex flex-col gap-4">
+        <ul className=" flex flex-col gap-10">
           <li>
             <a href="">
               <BsFacebook className="text-xl cursor-pointer" />
