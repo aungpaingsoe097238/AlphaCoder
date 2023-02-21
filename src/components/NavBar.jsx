@@ -29,11 +29,11 @@ const NavBar = () => {
           />
         </div>
       </div>
-      <div className=" sidebar fixed right-2 bottom-2  hidden">
-        <ul className=" bg-white py-5 px-5 flex flex-col gap-7 border border-slate-500 sidebar rounded-sm shadow-lg border-1 animate__animated animate__slideInRight">
-          <li className="">
+      <div className=" sidebar fixed right-0 bottom-0  hidden">
+        <ul className=" bg-white py-5 px-5 flex flex-col gap-7 border border-slate-500 rounded-sm border-1 border-r-0 animate__animated animate__slideInRight">
+          <li>
             <a href="#home">
-              <GoHome className=" text-2xl text-slate-500" />
+              <GoHome className=" text-2xl text-slate-500 " />
             </a>
           </li>
           <li>

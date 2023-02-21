@@ -9,6 +9,7 @@ import NavBar from "./NavBar";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
 import Top from "./Top";
+import noFace from "../assets/images/icons/noface.png";
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
         <div className="w-[70%] mx-auto ">
           <Services />
           <Gallery />
-          <Contact/>
+          <Contact />
         </div>
         <Footer />
       </div>

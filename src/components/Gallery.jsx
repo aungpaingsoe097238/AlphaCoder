@@ -28,7 +28,7 @@ const Gallery = () => {
       <p className=" my-5 text-gray-500 text-sm">
         History is become a life of a part.
       </p>
-      <div class="columns-1 lg:columns-3 max-xl:columns-4 ">
+      <div class="columns-1 lg:columns-3 xl:columns-4 ">
         <img
           src={k1}
           className=" aspect-video cursor-zoom-in w-full object-cover mb-5 rounded-lg"
