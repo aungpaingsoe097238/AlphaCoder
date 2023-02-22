@@ -5,13 +5,13 @@ import Title from "./utli/Title";
 const About = () => {
   return (
     <div
-      className="about h-screen flex flex-col justify-center gap-5"
+      className="about md:h-screen my-10 md:my-0 flex flex-col justify-center gap-5"
       id="about"
     >
       <Title title="About Me" subTitle="Who am i" />
-      <div className="flex flex-row gap-5">
-        <div className=" basis-1/3">
-          <div className="">
+      <div className="flex flex-col md:flex-row gap-5 ">
+        <div className=" basis-1/3 ">
+          <div className=" ">
             <img
               src={AboutImg}
               className="h-[400px] w-max-[100%] rounded-sm shadow-sm"

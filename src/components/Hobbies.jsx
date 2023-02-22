@@ -6,11 +6,11 @@ import { IoFastFoodOutline } from "react-icons/io5";
 
 const Hobbies = () => {
   return (
-    <div className="hobbies text-white flex flex-col">
-      <div className="my-5">
+    <div className="hobbies text-white flex flex-col justify-center">
+      <div className="my-2 md:my-5">
         <span className=" italic font-bold">- Hobbies -</span>
       </div>
-      <ul className=" flex gap-10">
+      <ul className="flex flex-col md:flex-row text-sm md:gap-10 gap-1 ">
         <li>
           <div className="flex gap-1 items-center">
             <CgGym className=" text-xl" />

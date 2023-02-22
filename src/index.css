@@ -32,7 +32,9 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("./assets/images/wallpaper/girl3.png");
-  background-size: cover;
+  background-size: cover ;
+  background-position: bottom;
+  background-position: center;
   position: relative;
   z-index: 1;
   background-attachment: fixed;
@@ -57,7 +59,9 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("./assets/images/wallpaper/studygirl3.jpg");
-  background-size: cover;
+  background-size: cover ;
+  background-position: bottom;
+  background-position: center;
   position: relative;
   background-position: top;
   z-index: 1;
@@ -83,7 +87,9 @@ html {
   justify-content: center;
   align-items: center;
   background-image: url("./assets/images/wallpaper/studygirl4.jpg");
-  background-size: cover;
+  background-size: cover ;
+  background-position: bottom;
+  background-position: center;
   position: relative;
   background-position: top;
   z-index: 1;

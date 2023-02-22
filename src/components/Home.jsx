@@ -15,22 +15,22 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="container-fluid">
+      <div className="container-fuild">
         <Top />
-        <div className="w-[70%] mx-auto ">
+        <div className="w-[90%] md:w-[70%] mx-auto ">
           <About />
         </div>
         <Moti />
-        <div className="w-[70%] mx-auto ">
+        <div className="w-[90%] md:w-[70%] mx-auto ">
           <Portfolio />
         </div>
         <Hobbies />
-        <div className="w-[70%] mx-auto ">
+        <div className="w-[90%] md:w-[70%] mx-auto ">
           <Services />
           <Gallery />
           <Contact />
-        </div>
-        <Footer />
+        </div> 
+        <Footer />  
       </div>
     </>
   );

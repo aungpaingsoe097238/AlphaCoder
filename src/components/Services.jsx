@@ -9,9 +9,9 @@ import Title from "./utli/Title";
 
 const Services = () => {
   return (
-    <div className="h-screen flex flex-col justify-center" id="services">
+    <div className=" my-5 md:my-0 md:h-screen flex flex-col justify-center" id="services">
       <Title title="Services" subTitle="What can I do" />
-      <div className="flex my-10 gap-5">
+      <div className="flex flex-col md:flex-row my-10 gap-5">
         <div className=" basis-1/3 shadow-sm border border-gray-200 rounded-lg py-3 px-2  flex flex-col justify-center items-center">
           <div className="">
             <img src={Dmqq} alt="" className=" h-36" />

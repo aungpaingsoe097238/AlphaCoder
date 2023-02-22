@@ -6,7 +6,9 @@ import { FiActivity } from "react-icons/fi";
 import { MdComputer } from "react-icons/md";
 import { TiThMenuOutline } from "react-icons/ti";
 
+
 const NavBar = () => {
+
   const handleSideBar = () => {
     let sidebar = document.querySelector(".sidebar");
     sidebar.classList.remove("animate__slideInRight");
@@ -17,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="w-full py-3 fixed top-0 z-10  bg-transparent ">
+    <nav className=" hidden md:block w-full py-3 fixed top-0 z-10  bg-transparent ">
       <div className="w-[70%] mx-auto flex justify-between items-center">
         <div className="text-xl font-semibold">
           <span className=" text-xl text-slate-800">Maw Gyi</span>

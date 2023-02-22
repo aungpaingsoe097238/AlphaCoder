@@ -9,7 +9,7 @@ const Top = () => {
   return (
     <div className="h-screen home relative text-white" id="home">
       <div className="flex flex-col justify-center items-center">
-        <div className="text-4xl uppercase p-2 relative font-semibold">
+        <div className=" text-2xl md:text-4xl uppercase p-2 relative font-semibold">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -54,7 +54,7 @@ const Top = () => {
         </div>
       </div>
       {/* Social */}
-      <div className=" absolute left-5 ">
+      <div className=" absolute bottom-2 left-2 md:left-5  ">
         <ul className=" flex flex-col gap-10">
           <li>
             <a href="">

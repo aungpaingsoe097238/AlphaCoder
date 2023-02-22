@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className=" relative">
-      <div className=" absolute bottom-5 left-10 text-slate-600 text-sm italic">
+      <div className=" absolute bottom-1 left-1 md:bottom-5 md:left-10 text-slate-600 text-xs md:text-sm italic">
         Created by Alpha@2023
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
