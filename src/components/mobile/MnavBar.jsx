@@ -6,41 +6,47 @@ import { MdComputer } from "react-icons/md";
 
 const MnavBar = () => {
   return (
-    <div className=" md:hidden w-screen fixed z-20 bottom-0 bg-white border border-t-slate-200 ">
-      <ul className="flex justify-around items-center py-2">
+    <div className=" md:hidden w-screen fixed z-[2] bottom-0 bg-white border border-t-slate-200 ">
+      <ul className="flex justify-around items-center pt-2 text-slate-500  ">
         <a href="#home">
-          <li className="sideber-active">
-            <GoHome className=" text-2xl text-slate-500 " />
+          <li className="m-sidebar-active">
+            <GoHome className=" text-xl " />
+            <span className=" text-xs">Home</span>
           </li>
         </a>
 
         <a href="#about">
-          <li className="sideber-active">
-            <BsCreditCard2Back className=" text-2xl text-slate-500" />
+          <li className="m-sidebar-active">
+            <BsCreditCard2Back className=" text-xl " />
+            <span className=" text-xs">Home</span>
           </li>
         </a>
 
         <a href="#portfolio">
-          <li className="sideber-active">
-            <MdComputer className=" text-2xl text-slate-500" />
+          <li className="m-sidebar-active">
+            <MdComputer className=" text-xl " />
+            <span className=" text-xs">Home</span>
           </li>
         </a>
 
         <a href="#services">
-          <li className="sideber-active">
-            <FiActivity className=" text-2xl text-slate-500" />
+          <li className="m-sidebar-active">
+            <FiActivity className=" text-xl" />
+            <span className=" text-xs">Home</span>
           </li>
         </a>
 
         <a href="#gallery">
-          <li className="sideber-active ">
-            <BsImages className=" text-2xl text-slate-500" />
+          <li className="m-sidebar-active">
+            <BsImages className=" text-xl " />
+            <span className=" text-xs">Home</span>
           </li>
         </a>
 
         <a href="#contact">
-          <li className="sideber-active">
-            <BsTelephone className=" text-2xl text-slate-500 " />
+          <li className="m-sidebar-active">
+            <BsTelephone className=" text-xl " />
+            <span className=" text-xs">Home</span>
           </li>
         </a>
       </ul>

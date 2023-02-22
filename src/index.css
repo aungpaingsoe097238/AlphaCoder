@@ -36,7 +36,7 @@ html {
   background-position: bottom;
   background-position: center;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   background-attachment: fixed;
 }
 
@@ -142,7 +142,10 @@ html {
 }
 
 .sideber-active {
-  @apply active:bg-slate-200 rounded-full;
+  @apply active:bg-slate-200 rounded-full ;
+}
+.m-sidebar-active {
+  @apply active:bg-slate-200 rounded-full flex flex-col justify-center items-center gap-1;
 }
 
 .write-style {

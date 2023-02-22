@@ -13,6 +13,7 @@ const Skill = () => {
         <span className=" italic font-bold">- Skills -</span>
       </div>
       <ul className="flex md:flex-row text-xs md:text-sm md:gap-10 gap-2">
+        
         <div className=" md:flex md:gap-10">
           <li>
             <div className="flex gap-1 items-center font-bold">
@@ -75,6 +76,7 @@ const Skill = () => {
             </div>
           </li>
         </div>
+
       </ul>
     </div>
   );
