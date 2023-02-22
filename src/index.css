@@ -108,16 +108,12 @@ html {
   z-index: -1;
 }
 
-/*Gallery*/
-.gallery {
-  columns: 3;
+.gallery-img {
+  @apply cursor-zoom-in w-full object-cover mb-5 rounded-lg
 }
 
-.gallery img {
-  width: 100%;
-  object-fit: cover;
-  margin-bottom: 10px;
-  border-radius: 10px;
+.sideber-active {
+  @apply active:bg-slate-200 rounded-full;
 }
 
 .write-style {

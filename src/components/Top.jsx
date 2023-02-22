@@ -3,7 +3,7 @@ import { CgArrowLongRightC, CgArrowLongLeftC } from "react-icons/cg";
 import { BsMouse } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Typewriter from "typewriter-effect";
-import { BsFacebook, BsInstagram, BsGithub } from "react-icons/bs";
+import Social from "./Social";
 
 const Top = () => {
   return (
@@ -44,6 +44,11 @@ const Top = () => {
             Download CV
           </button>
         </div>
+        {/* Social */}
+        <div className="md:absolute md:bottom-[50%] mt-5 md:mt-0 md:left-5">
+          <Social />
+        </div>
+        {/* Social */}
         <div>
           <a href="#about">
             <span className="absolute bottom-10 flex flex-col justify-center items-center gap-1 cursor-pointer hover:text-gray-800 z-50 ">
@@ -53,27 +58,6 @@ const Top = () => {
           </a>
         </div>
       </div>
-      {/* Social */}
-      <div className=" absolute bottom-2 left-2 md:left-5  ">
-        <ul className=" flex flex-col gap-10">
-          <li>
-            <a href="">
-              <BsFacebook className="text-xl cursor-pointer" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <BsInstagram className="text-xl cursor-pointer" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <BsGithub className="text-xl cursor-pointer" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      {/* Social */}
     </div>
   );
 };
