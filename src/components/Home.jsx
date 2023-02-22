@@ -9,28 +9,37 @@ import NavBar from "./NavBar";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
 import Top from "./Top";
-import noFace from "../assets/images/icons/noface.png";
+import Skill from "./Skill";
+import MnavBar from "./mobile/MnavBar";
 
 const Home = () => {
   return (
     <>
       <NavBar />
+      {/* Only For Mobile */}
+      <div>
+        <MnavBar />
+      </div>
+      {/* --- */}
       <div className="container-fuild">
         <Top />
         <div className="w-[90%] md:w-[70%] mx-auto ">
           <About />
         </div>
-        <Moti />
+        <Skill />
         <div className="w-[90%] md:w-[70%] mx-auto ">
           <Portfolio />
         </div>
-        <Hobbies />
+        <Moti />
         <div className="w-[90%] md:w-[70%] mx-auto ">
           <Services />
+        </div>
+        <Hobbies />
+        <div className="w-[90%] md:w-[70%] mx-auto">
           <Gallery />
           <Contact />
-        </div> 
-        <Footer />  
+        </div>
+        <Footer />
       </div>
     </>
   );

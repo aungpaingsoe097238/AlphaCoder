@@ -1,0 +1,109 @@
+.skill-bars {
+  width: 100%;
+}
+
+.skill-bars .bar .info {
+  margin-bottom: 10px;
+}
+
+.skill-bars .bar .info span {
+  opacity: 1;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: white;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-bars .bar .progress-line {
+  height: 5px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #0f172a;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
+  width: 90%;
+}
+
+.bar .progress-line.css span {
+  width: 60%;
+}
+
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #334155;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #334155;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-line.html span::after {
+  content: "90%";
+}
+
+.progress-line.css span::after {
+  content: "60%";
+}
+
+.progress-line.jquery span::after {
+  content: "85%";
+}
+
+.progress-line.python span::after {
+  content: "50%";
+}
+
+.progress-line.mysql span::after {
+  content: "75%";
+}

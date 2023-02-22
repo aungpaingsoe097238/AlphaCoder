@@ -23,7 +23,7 @@ import k20 from "../assets/images/kznm/k20.jpg";
 
 const Gallery = () => {
   return (
-    <div className=" my-5" id="gallery">
+    <div className=" my-5 md:h-screen md:flex md:flex-col md:justify-center " id="gallery">
       <Title title="Gallery" subTitle="My Memories" />
       <p className=" my-5 text-gray-500 text-sm">
         History is become a life of a part.

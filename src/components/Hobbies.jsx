@@ -10,34 +10,34 @@ const Hobbies = () => {
       <div className="my-2 md:my-5">
         <span className=" italic font-bold">- Hobbies -</span>
       </div>
-      <ul className="flex flex-col md:flex-row text-sm md:gap-10 gap-1 ">
+      <ul className="flex flex-col md:flex-row text-xs md:text-sm md:gap-10 gap-1 ">
         <li>
-          <div className="flex gap-1 items-center">
-            <CgGym className=" text-xl" />
+          <div className="flex gap-1 items-center font-bold">
+            <CgGym className=" text-2xl" />
             Gym
           </div>
         </li>
         <li>
-          <div className="flex gap-1 items-center">
-            <CgCode className=" text-xl" />
+          <div className="flex gap-1 items-center font-bold">
+            <CgCode className=" text-2xl" />
             Coding
           </div>
         </li>
         <li>
-          <div className="flex gap-1 items-center">
-            <GoBook className=" text-xl" />
+          <div className="flex gap-1 items-center font-bold">
+            <GoBook className=" text-2xl" />
             Reading
           </div>
         </li>
         <li>
-          <div className="flex gap-1 items-center">
-            <TbMountain className=" text-xl" />
+          <div className="flex gap-1 items-center font-bold">
+            <TbMountain className=" text-2xl" />
             Hiking
           </div>
         </li>
         <li>
-          <div className="flex gap-1 items-center">
-            <IoFastFoodOutline className=" text-xl" />
+          <div className="flex gap-1 items-center font-bold">
+            <IoFastFoodOutline className=" text-2xl" />
             Eating
           </div>
         </li>
