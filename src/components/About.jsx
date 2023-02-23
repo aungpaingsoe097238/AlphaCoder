@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import AboutImg from "../assets/images/kznm/about.png";
+import { addState } from "../features/services/modelSlice";
 import Title from "./utli/Title";
 
 const About = () => {
+
+  const dispatch = useDispatch();
+
+  const handleModel = () => {
+    dispatch(addState({ screen : 'about' }));
+  }
+
   return (
     <>
       <div
@@ -10,7 +19,7 @@ const About = () => {
         id="about"
       >
         <Title title="About Me" subTitle="Who am i" />
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row gap-10">
           <div className=" basis-1/3 ">
             <div className=" ">
               <img
@@ -37,7 +46,7 @@ const About = () => {
                 voluptatum, esse autem, dignissimos expedita totam laborum id
                 culpa sequi ut vitae deleniti officiis.
               </p>
-              <button className="button-52" role="button">
+              <button className="button-52" role="button" onClick={handleModel}>
                 More About Me
               </button>
             </div>

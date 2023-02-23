@@ -11,15 +11,23 @@ import Services from "./Services";
 import Top from "./Top";
 import Skill from "./Skill";
 import MnavBar from "./mobile/MnavBar";
+import Model from "./model/Model";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+
+  const model = useSelector((state) => state?.model);
+
   return (
     <>
       <NavBar />
       {/* Only For Mobile */}
-      <div>
-        <MnavBar />
-      </div>
+      <MnavBar />
+      {/* --- */}
+      {/* Model */}
+      {
+        model?.open &&  <Model />
+      }
       {/* --- */}
       <div className="container-fuild">
         <Top />
