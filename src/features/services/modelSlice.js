@@ -11,6 +11,9 @@ export const modelSlice = createSlice({
       state.open = !state.open;
       if(state.open === true){
         state.screen = actions.payload.screen;
+        document.body.style.overflow = "hidden";
+      }else{
+        document.body.style.overflow = "auto";
       }
     }
   }

@@ -54,23 +54,28 @@ const About = () => {
               <table className="w-full text-sm text-left text-gray-600 dark:text-gray-400">
                 <tbody>
                   <tr>
-                    <td className="py-2">Name:</td>
+                    <td className="py-2">Name</td>
+                    <td>:</td>
                     <td>Khaing Zar Ni Maw</td>
                   </tr>
                   <tr >
-                    <td className="py-2">Email:</td>
+                    <td className="py-2">Email</td>
+                    <td>:</td>
                     <td>khaingzarnimaw1996@gmail.com</td>
                   </tr>
                   <tr >
-                    <td className="py-2">Phone:</td>
+                    <td className="py-2">Phone</td>
+                    <td>:</td>
                     <td>080-5160-7234</td>
                   </tr>
                   <tr >
-                    <td className="py-2">Birthday:</td>
+                    <td className="py-2">Birthday</td>
+                    <td>:</td>
                     <td>10-6-1996</td>
                   </tr>
                   <tr >
-                    <td className="py-2">Gender:</td>
+                    <td className="py-2">Gender</td>
+                    <td>:</td>
                     <td>Female</td>
                   </tr>
                 </tbody>

@@ -4,16 +4,13 @@ import photo from "../../../assets/images/kznm/photo.jpg";
 
 const AboutScreen = () => {
   return (
-    <div className="my-3 mx-10">
-      <div className="flex ">
+    <div className=" overflow-y-auto h-full">
+      {/* <div className="flex">
         <div className="">
           <div>Biography</div>
-          <div className=" flex gap-5">
-            <div>
-              <img src={ photo } className=" h-[200px] rounded-sm write-style" alt="" />
-            </div>
+          <div className=" flex justify-center items-center gap-5">
             <div className="relative overflow-x-auto">
-              <table className="w-full text-left text-gray-800 ">
+              <table className="w-full text-left text-gray-700 text-sm ">
                 <tbody>
                   <tr>
                     <td className="py-1">Name</td>
@@ -43,13 +40,80 @@ const AboutScreen = () => {
                   <tr>
                     <td className="py-1">Address</td>
                     <td>:</td>
-                    <td>〒 160-0007 東京都 新宿区荒木町15番地横内マンション302ホンケマンション２０２号</td>
+                    <td>
+                      〒 160-0007 東京都
+                      新宿区荒木町15番地横内マンション302ホンケマンション２０２号
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
+      </div> */}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque
+        recusandae harum fuga eaque mollitia reprehenderit, ducimus eligendi
+        magni id repudiandae praesentium ea aut sed nesciunt, nulla facere
+        consequuntur aspernatur!
       </div>
     </div>
   );

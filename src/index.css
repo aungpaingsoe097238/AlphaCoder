@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hidden{
+  overflow: hidden;
+}
+
 .label {
   @apply block mb-2 text-sm font-medium text-slate-900 dark:text-white;
 }
