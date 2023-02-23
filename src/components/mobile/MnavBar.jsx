@@ -2,7 +2,12 @@ import React from "react";
 import { GoHome } from "react-icons/go";
 import { BsCreditCard2Back, BsImages, BsTelephone } from "react-icons/bs";
 import { FiActivity } from "react-icons/fi";
-import { MdComputer } from "react-icons/md";
+import {
+  MdComputer,
+  MdContactPhone,
+  MdOutlineAccountCircle
+} from "react-icons/md";
+import { VscAccount } from "react-icons/vsc";
 
 const MnavBar = () => {
   return (
@@ -17,36 +22,36 @@ const MnavBar = () => {
 
         <a href="#about">
           <li className="m-sidebar-active">
-            <BsCreditCard2Back className=" text-xl " />
-            <span className=" text-xs">Home</span>
+            <VscAccount className=" text-xl " />
+            <span className=" text-xs">About</span>
           </li>
         </a>
 
         <a href="#portfolio">
           <li className="m-sidebar-active">
             <MdComputer className=" text-xl " />
-            <span className=" text-xs">Home</span>
+            <span className=" text-xs">Protfolio</span>
           </li>
         </a>
 
         <a href="#services">
           <li className="m-sidebar-active">
             <FiActivity className=" text-xl" />
-            <span className=" text-xs">Home</span>
+            <span className=" text-xs">Services</span>
           </li>
         </a>
 
         <a href="#gallery">
           <li className="m-sidebar-active">
             <BsImages className=" text-xl " />
-            <span className=" text-xs">Home</span>
+            <span className=" text-xs">Gallery</span>
           </li>
         </a>
 
         <a href="#contact">
           <li className="m-sidebar-active">
-            <BsTelephone className=" text-xl " />
-            <span className=" text-xs">Home</span>
+            <MdContactPhone className=" text-xl " />
+            <span className=" text-xs">Contact</span>
           </li>
         </a>
       </ul>

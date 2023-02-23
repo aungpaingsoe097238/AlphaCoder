@@ -2,7 +2,13 @@ import React from "react";
 import { GoHome } from "react-icons/go";
 import { BsCreditCard2Back, BsImages, BsTelephone } from "react-icons/bs";
 import { FiActivity } from "react-icons/fi";
-import { MdComputer } from "react-icons/md";
+import {
+  MdComputer,
+  MdContactPhone,
+  MdOutlineAccountCircle
+} from "react-icons/md";
+import { VscAccount } from "react-icons/vsc";
+
 
 const SideBar = () => {
   return (
@@ -15,7 +21,7 @@ const SideBar = () => {
 
       <a href="#about">
         <li className="sideber-active p-1">
-          <BsCreditCard2Back className=" text-2xl text-slate-500" />
+          <VscAccount className=" text-2xl text-slate-500" />
         </li>
       </a>
 
@@ -39,7 +45,7 @@ const SideBar = () => {
 
       <a href="#contact">
         <li className="sideber-active p-1">
-          <BsTelephone className=" text-2xl text-slate-500 " />
+          <MdContactPhone className=" text-2xl text-slate-500 " />
         </li>
       </a>
     </ul>

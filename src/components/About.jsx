@@ -10,7 +10,7 @@ const About = () => {
         id="about"
       >
         <Title title="About Me" subTitle="Who am i" />
-        <div className="flex flex-col md:flex-row gap-5 ">
+        <div className="flex flex-col md:flex-row">
           <div className=" basis-1/3 ">
             <div className=" ">
               <img
@@ -26,19 +26,47 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className=" basis-2/3">
-            <div className=" text-2xl font-semibold mb-2">
-              I'm Khaing Zar Ni Maw
+          <div className=" basis-2/3 flex gap-3 flex-col">
+            <div>
+              <div className=" text-2xl font-semibold mb-2">
+                I'm Khaing Zar Ni Maw
+              </div>
+              <p className="mb-5 text-slate-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti non accusantium alias nemo iure iusto accusamus
+                voluptatum, esse autem, dignissimos expedita totam laborum id
+                culpa sequi ut vitae deleniti officiis.
+              </p>
+              <button className="button-52" role="button">
+                More About Me
+              </button>
             </div>
-            <p className="mb-5 text-slate-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-              eos iusto odio vero fuga similique accusamus, repudiandae ullam
-              porro quia, inventore saepe soluta magni voluptatibus aliquid eum
-              id vitae nam.
-            </p>
-            <button className="button-52" role="button">
-              More About Me
-            </button>
+            <div className="relative overflow-x-auto">
+              <table className="w-full text-sm text-left text-gray-600 dark:text-gray-400">
+                <tbody>
+                  <tr>
+                    <td className="py-2">Name:</td>
+                    <td>Khaing Zar Ni Maw</td>
+                  </tr>
+                  <tr >
+                    <td className="py-2">Email:</td>
+                    <td>khaingzarnimaw1996@gmail.com</td>
+                  </tr>
+                  <tr >
+                    <td className="py-2">Phone:</td>
+                    <td>080-5160-7234</td>
+                  </tr>
+                  <tr >
+                    <td className="py-2">Birthday:</td>
+                    <td>10-6-1996</td>
+                  </tr>
+                  <tr >
+                    <td className="py-2">Gender:</td>
+                    <td>Female</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
