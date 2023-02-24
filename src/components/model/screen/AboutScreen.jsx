@@ -52,10 +52,10 @@ const AboutScreen = () => {
 
   return (
     <div className=" w-full overflow-y-auto h-full">
-      <div className=" m-5">
+      <div className=" my-5 mx-1 md:my-5 md:mx-3 ">
         <LineTitle title="Biography" />
-        <div className="flex ">
-          <div className=" basis-1/3">
+        <div className="flex md:flex-row flex-col ">
+          <div className=" md:basis-1/3">
             <div className="">
               <img
                 src={photo}
@@ -72,7 +72,7 @@ const AboutScreen = () => {
               </div>
             </div>
           </div>
-          <div className=" basis-2/3">
+          <div className=" md:basis-2/3">
             <div className=" flex flex-col gap-2">
               <div>
                 <table className=" text-sm text-slate-700">
@@ -96,8 +96,8 @@ const AboutScreen = () => {
           </div>
         </div>
         <LineTitle title="Programming" />
-        <div className=" flex">
-          <div className=" basis-1/3">
+        <div className=" flex md:flex-row flex-col">
+          <div className=" md:basis-1/3">
             <div className="flex flex-col gap-3 text-slate-700">
               <ul className=" flex justify-center gap-6">
                 <li>
@@ -161,7 +161,7 @@ const AboutScreen = () => {
               </ul>
             </div>
           </div>
-          <div className=" basis-2/3">
+          <div className=" md:basis-2/3">
             <div className=" text-md underline text-slate-800 mb-3">Other</div>
             <p className=" text-slate-700 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
@@ -175,7 +175,7 @@ const AboutScreen = () => {
         <div className=" flex">
           <div className=" basis-1/3">
             <div className=" text-center text-slate-700">
-              <div className=" flex flex-col gap-4">
+              <div className=" flex flex-col gap-4 text-sm">
                 <div>2012年10月 〜 2016年10月</div>
                 <div>2019年3月 〜 2021年3月</div>
                 <div>2021年4月 〜 2023年3月</div>
@@ -183,7 +183,7 @@ const AboutScreen = () => {
             </div>
           </div>
           <div className=" basis-2/3">
-            <div className=" flex flex-col gap-4 text-slate-700">
+            <div className=" flex flex-col gap-4 text-sm text-slate-700">
               <div>
                 B.A(Geography) Yangon University of Distance Education (Dagon
                 branch)
@@ -214,9 +214,9 @@ const AboutScreen = () => {
             >
               {certificates?.map((certificate) => (
                 <SwiperSlide>
-                  <div className=" w-[90%] mx-auto flex items-center ">
-                    <div className=" basis-1/3">
-                      <div className="p-5">
+                  <div className="w-full md:w-[90%] mx-auto flex md:flex-row flex-col gap-3 md:gap-0 items-center ">
+                    <div className=" md:basis-1/3">
+                      <div className="p-1 md:p-5">
                         <img
                           src={certificate.img}
                           className=" border-2 max-h-[200px] border-slate-500 cursor-zoom-in mx-auto rounded-sm "
@@ -224,7 +224,7 @@ const AboutScreen = () => {
                         />
                       </div>
                     </div>
-                    <div className=" basis-2/3">
+                    <div className=" md:basis-2/3">
                       <div className=" text-slate-800 underline mb-3">
                         {certificate.title}
                       </div>
