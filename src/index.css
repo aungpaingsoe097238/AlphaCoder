@@ -222,3 +222,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ef4444;
+  opacity: 0.5;
+}

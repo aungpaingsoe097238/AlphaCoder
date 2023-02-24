@@ -19,7 +19,7 @@ const Gallery = () => {
       <div class="columns-1 md:columns-3 xl:columns-4 ">
         <img
           src={k1}
-          className=" aspect-square gallery-img "
+          className=" aspect-square gallery-img"
           alt=""
         />
         <img
