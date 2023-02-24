@@ -11,50 +11,50 @@ import Girl from "../assets/images/wallpaper/girl.png";
 import Girl2 from "../assets/images/wallpaper/girl2.png";
 import Girl3 from "../assets/images/wallpaper/girl3.png";
 
-const ProjectSwiper = ( props) => {
+const ProjectSwiper = (props) => {
   const projects = [
     {
       title: "Project One",
       image: StudyGirl,
-      url: "https://www.google.com"
+      url: "https://www.google.com",
     },
     {
       title: "Project Two",
       image: StudyGirl2,
-      url: "https://www.google.com"
+      url: "https://www.google.com",
     },
     {
       title: "Project Three",
       image: StudyGirl3,
-      url: "https://www.google.com"
+      url: "https://www.google.com",
     },
     {
       title: "Project Four",
       image: Girl,
-      url: "https://www.google.com"
+      url: "https://www.google.com",
     },
     {
       title: "Project Five",
       image: Girl2,
-      url: "https://www.google.com"
+      url: "https://www.google.com",
     },
     {
       title: "Project Six",
       image: Girl3,
-      url: "https://www.google.com"
-    }
+      url: "https://www.google.com",
+    },
   ];
   return (
     <Swiper
       slidesPerView={props.media}
       spaceBetween={30}
       pagination={{
-        type: "fraction"
+        type: "fraction",
       }}
       navigation={true}
       autoplay={{
         delay: 2500,
-        disableOnInteraction: false
+        disableOnInteraction: false,
       }}
       modules={[Pagination, Autoplay, Navigation]}
       className=" my-10"

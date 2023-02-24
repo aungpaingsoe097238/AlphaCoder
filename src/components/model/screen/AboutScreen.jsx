@@ -1,6 +1,15 @@
 import React from "react";
 import suya from "../../../assets/images/kznm/suya.jpg";
 import photo from "../../../assets/images/kznm/photo.jpg";
+import c1 from "../../../assets/images/certificate/c1.jpg";
+import c2 from "../../../assets/images/certificate/c2.jpg";
+import c3 from "../../../assets/images/certificate/c3.jpg";
+import c4 from "../../../assets/images/certificate/c4.jpg";
+import c5 from "../../../assets/images/certificate/c5.jpg";
+import c6 from "../../../assets/images/certificate/c6.jpg";
+import c7 from "../../../assets/images/certificate/c7.jpg";
+import c8 from "../../../assets/images/certificate/c8.jpg";
+import c9 from "../../../assets/images/certificate/c9.jpg";
 import { BsFacebook, BsInstagram, BsLine, BsGithub } from "react-icons/bs";
 import LineTitle from "../../utli/LineTitle";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -8,6 +17,11 @@ import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { SiBootstrap, SiTailwindcss, SiReact, SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbHash } from "react-icons/tb";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Pagination, Autoplay, Navigation } from "swiper";
 
 const AboutScreen = () => {
   const table_abouts = [
@@ -20,8 +34,20 @@ const AboutScreen = () => {
     { title: "Relagion", text: "Buddha" },
     {
       title: "Address",
-      text: "〒 160-0007 東京都 新宿区荒木町15番地横内マンション302ホンケマンション２０２号"
-    }
+      text: "〒 160-0007 東京都 新宿区荒木町15番地横内マンション302ホンケマンション２０２号",
+    },
+  ];
+
+  const certificates = [
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c1 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c2 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c3 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c4 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c5 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c6 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c7 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c8 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c9 },
   ];
 
   return (
@@ -135,9 +161,9 @@ const AboutScreen = () => {
               </ul>
             </div>
           </div>
-          <div className=" basis-1/3">
-            <div className=" text-lg">Other</div>
-            <p className=" text-slate-700">
+          <div className=" basis-2/3">
+            <div className=" text-md underline text-slate-800 mb-3">Other</div>
+            <p className=" text-slate-700 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatibus consectetur dolorum omnis. Laboriosam, obcaecati!
               Nostrum officiis neque repellat, dolorem ea voluptates aut. Omnis
@@ -170,7 +196,48 @@ const AboutScreen = () => {
             </div>
           </div>
         </div>
-        <LineTitle/>
+        <LineTitle title="Certification" />
+        <div className="">
+          <div>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              pagination={{
+                type: "fraction",
+              }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Pagination, Autoplay, Navigation]}
+              className=""
+            >
+              {certificates?.map((certificate) => (
+                <SwiperSlide>
+                  <div className=" w-[90%] mx-auto flex items-center ">
+                    <div className=" basis-1/3">
+                      <div className="p-5">
+                        <img
+                          src={certificate.img}
+                          className=" border-2 max-h-[200px] border-slate-500 cursor-zoom-in mx-auto rounded-sm "
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div className=" basis-2/3">
+                      <div className=" text-slate-800 underline mb-3">
+                        {certificate.title}
+                      </div>
+                      <div className="text-sm text-slate-700">
+                        {certificate.text}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
       </div>
     </div>
   );
