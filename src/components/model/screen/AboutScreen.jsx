@@ -68,17 +68,108 @@ const AboutScreen = () => {
           </div>
         </div>
       </div>
-      <LineTitle title="Knowledge" />
-      <div>
-        <ul>
-          <li>
-            <div className=" p-2 border rounded-lg inline-block">
-              <AiFillHtml5 className=" text-2xl" />
-              <span>Html</span>
-            </div>
-          </li>
-        </ul>
+      <LineTitle title="Programming" />
+      <div className=" flex">
+        <div className=" basis-1/3">
+          <div className="flex flex-col gap-3 text-slate-700">
+            <ul className=" flex justify-center gap-6">
+              <li>
+                <div className=" w-[50px] text-center">
+                  <AiFillHtml5 className=" text-2xl mx-auto" />
+                  <span className="text-xs">Html</span>
+                </div>
+              </li>
+              <li>
+                <div className="w-[50px]  text-center">
+                  <IoLogoCss3 className=" text-2xl mx-auto" />
+                  <span className="text-xs">Css</span>
+                </div>
+              </li>
+              <li>
+                <div className="w-[50px]  text-center">
+                  <IoLogoJavascript className=" text-2xl mx-auto" />
+                  <span className="text-xs">JavaScript</span>
+                </div>
+              </li>
+            </ul>
+            <ul className=" flex justify-center gap-6">
+              <li>
+                <div className=" w-[50px] text-center">
+                  <SiBootstrap className=" text-2xl mx-auto" />
+                  <span className="text-xs">Bootstrap5</span>
+                </div>
+              </li>
+              <li>
+                <div className="w-[50px]  text-center">
+                  <SiTailwindcss className=" text-2xl mx-auto" />
+                  <span className="text-xs">TailwindCss</span>
+                </div>
+              </li>
+              <li>
+                <div className="w-[50px]  text-center">
+                  <SiReact className=" text-2xl mx-auto" />
+                  <span className="text-xs">React</span>
+                </div>
+              </li>
+            </ul>
+            <ul className=" flex justify-center gap-6">
+              <li>
+                <div className=" w-[50px] text-center">
+                  <TbHash className=" text-2xl mx-auto" />
+                  <span className="text-xs">C#</span>
+                </div>
+              </li>
+              <li>
+                <div className="w-[50px]  text-center">
+                  <GrMysql className=" text-2xl mx-auto" />
+                  <span className="text-xs">MySQL</span>
+                </div>
+              </li>
+              <li>
+                <div className="w-[50px]  text-center">
+                  <SiMongodb className=" text-2xl mx-auto" />
+                  <span className="text-xs">MongoDB</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className=" basis-1/3">
+          <div className=" text-lg">Other</div>
+          <p className=" text-slate-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            voluptatibus consectetur dolorum omnis. Laboriosam, obcaecati!
+            Nostrum officiis neque repellat, dolorem ea voluptates aut. Omnis ex
+            eos eveniet. Similique, perspiciatis itaque.
+          </p>
+        </div>
       </div>
+      <LineTitle title="Education" />
+      <div className=" flex">
+        <div className=" basis-1/3">
+          <div className=" text-center">
+            <div className=" flex flex-col gap-4">
+              <div>2012年10月 〜 2016年10月</div>
+              <div>2019年3月 〜 2021年3月</div>
+              <div>2021年4月 〜 2023年3月</div>
+            </div>
+          </div>
+        </div>
+        <div className=" basis-2/3">
+          <div className=" flex flex-col gap-4">
+            <div>
+              B.A(Geography) Yangon University of Distance Education (Dagon
+              branch)
+            </div>
+            <div>国際言葉学院</div>
+            <div>
+              専門学校静岡電子情報カレッジ IT スペシャリスト IT
+              ゲームロボット＆システム学科
+            </div>
+          </div>
+        </div>
+      </div>
+      <LineTitle title="Experience" />
     </div>
   );
 };
