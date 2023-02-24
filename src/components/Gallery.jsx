@@ -19,42 +19,42 @@ const Gallery = () => {
       <div class="columns-1 md:columns-3 xl:columns-4 ">
         <img
           src={k1}
-          className=" aspect-square md:aspect-video gallery-img "
+          className=" aspect-square gallery-img "
           alt=""
         />
         <img
           src={k2}
-          className=" aspect-square md:aspect-video gallery-img"
+          className=" aspect-square gallery-img"
           alt=""
         />
         <img
           src={k16}
-          className="aspect-square md:aspect-square gallery-img"
+          className="aspect-square gallery-img"
           alt=""
         />
         <img
           src={k5}
-          className=" aspect-square md:aspect-square gallery-img"
+          className=" aspect-square gallery-img"
           alt=""
         />
         <img
           src={k11}
-          className=" aspect-square md:aspect-square gallery-img"
+          className=" aspect-square gallery-img"
           alt=""
         />
         <img
           src={k12}
-          className=" aspect-square md:aspect-square gallery-img"
+          className=" aspect-square gallery-img"
           alt=""
         />
         <img
           src={k14}
-          className=" aspect-square md:aspect-video gallery-img"
+          className=" aspect-square  gallery-img"
           alt=""
         />
         <img
           src={k15}
-          className=" aspect-square md:aspect-video gallery-img"
+          className=" aspect-square gallery-img"
           alt=""
         />
       </div>
