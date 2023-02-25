@@ -37,10 +37,10 @@ const Model = () => {
 
   return (
     <div className=" model relative">
-      <div className=" absolute top-0 right-0 md:top-2 md:right-2">
+      <div className=" absolute top-0 right-0 md:top-2 md:right-2 z-[1000]">
         <AiOutlineCloseCircle
           onClick={handleModel}
-          className=" text-6xl cursor-pointer text-slate-900 hover:text-rose-500 transition-all"
+          className=" text-6xl cursor-pointer text-slate-900 hover:text-rose-500 transition-all "
         />
       </div>
       {Screen}
