@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -15,7 +15,7 @@ import Model from "./model/Model";
 import { useSelector } from "react-redux";
 
 const Home = () => {
-
+  
   const model = useSelector((state) => state?.model);
 
   return (
@@ -25,9 +25,7 @@ const Home = () => {
       <MnavBar />
       {/* --- */}
       {/* Model */}
-      {
-        model?.open &&  <Model />
-      }
+      {model?.open && <Model />}
       {/* --- */}
       <div className="container-fuild">
         <Top />

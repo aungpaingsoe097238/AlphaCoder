@@ -3,20 +3,22 @@ import { createSlice } from "@reduxjs/toolkit";
 export const modelSlice = createSlice({
   name: "model",
   initialState: {
-    open : false,
-    screen : ''
+    open: false,
+    screen: "",
+    image: "",
   },
   reducers: {
-    addState: (state,actions) => {
+    addState: (state, actions) => {
       state.open = !state.open;
-      if(state.open === true){
+        state.image = actions.payload.image;
+      if (state.open === true) {
         state.screen = actions.payload.screen;
         document.body.style.overflow = "hidden";
-      }else{
+      } else {
         document.body.style.overflow = "auto";
       }
-    }
-  }
+    },
+  },
 });
 
 export const { addState } = modelSlice.actions;
