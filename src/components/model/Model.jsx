@@ -23,7 +23,7 @@ const Model = () => {
     );
   } else if (screen === "gallery") {
     Screen = (
-      <div className="containe bg-transparent h-full w-full md:w-[90%] md:h-[90%] rounded-sm">
+      <div className="container  bg-transparent h-full w-full  md:w-[90%] md:h-[90%] rounded-sm">
         <GalleryScreen />
       </div>
     );

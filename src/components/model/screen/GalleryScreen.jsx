@@ -7,7 +7,7 @@ const GalleryScreen = () => {
   console.log(image);
 
   return (
-    <div className=" w-full overflow-y-auto h-full bg-transparent">
+    <div className=" w-full overflow-y-auto h-full flex justify-center items-center">
       <img src={image} className=" max-h-full mx-auto " alt="" />
     </div>
   );
