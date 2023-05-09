@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import AboutImg from "../assets/images/kznm/about.png";
+import AboutImg from "../assets/images/aps/about.png";
 import { addState } from "../features/services/modelSlice";
 import Title from "./utli/Title";
 
@@ -24,21 +24,21 @@ const About = () => {
             <div className=" ">
               <img
                 src={AboutImg}
-                className="h-[400px] w-max-[100%] rounded-sm shadow-sm"
+                className="h-[400px] w-max-[100%] border  rounded-lg shadow-sm grayscale-[90%] "
                 alt=""
               />
               <div className=" relative">
-                <div className=" flex justify-center items-center text-white text-xl bg-red-500 w-28 h-28 rounded-full opacity-80 absolute -bottom-10 -left-10">
-                  27歳
+                <div className=" flex justify-center items-center text-white text-xl bg-gray-300 w-28 h-28 rounded-full opacity-80 absolute -bottom-10 -left-10">
+                  23
                 </div>
-                <div className=" absolute bg-red-500 w-16 h-16 rounded-full opacity-80 bottom-8 left-3 "></div>
+                <div className=" absolute bg-gray-300 w-16 h-16 rounded-full opacity-80 bottom-8 left-3 "></div>
               </div>
             </div>
           </div>
           <div className=" basis-2/3 flex gap-3 flex-col">
             <div>
               <div className=" text-2xl font-semibold mb-2">
-                I'm Khaing Zar Ni Maw
+                I'm Aung Paing Soe
               </div>
               <p className="mb-5 text-slate-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

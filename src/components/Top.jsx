@@ -16,9 +16,9 @@ const Top = () => {
                 .typeString("Hi There!")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("I'm Khaing Zar Ni Maw")
+                .typeString("I'm Aung Paing Soe")
                 .pauseFor(1000)
-                .deleteChars(17)
+                .deleteChars(14)
                 .typeString("a Web Developer")
                 .pauseFor(1000)
                 .deleteChars(15)
@@ -27,13 +27,13 @@ const Top = () => {
                 )
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("カイン ザー ニ モー")
-                .start();
+                .typeString("Aung Paing Soe")
+                .start()
             }}
           />
         </div>
         <div>
-          <span className="flex justify-center items-center gap-2">
+          <span className="flex justify-center items-center gap-2 font-semibold">
             <CgArrowLongRightC />
             Welcome to my site!
             <CgArrowLongLeftC />
