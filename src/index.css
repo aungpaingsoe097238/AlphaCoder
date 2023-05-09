@@ -65,7 +65,7 @@ html {
   height: 200px;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/wallpaper/studygirl3.jpg");
+  background-image: url("./assets/images/wallpaper/top_wallpaper.png");
   background-size: cover;
   background-position: bottom;
   background-position: center;
@@ -77,9 +77,9 @@ html {
 
 .moti::before {
   content: "";
-  background: #c94b4b;
-  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
-  background: linear-gradient(to right, #4b134f, #c94b4b);
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
   width: 100%;
   height: 200px;
   position: absolute;
@@ -93,7 +93,7 @@ html {
   height: 200px;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/wallpaper/studygirl4.jpg");
+  background-image: url("./assets/images/wallpaper/top_wallpaper.png");
   background-size: cover;
   background-position: bottom;
   background-position: center;
@@ -105,9 +105,9 @@ html {
 
 .hobbies::before {
   content: "";
-  background: #c94b4b;
-  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
-  background: linear-gradient(to right, #4b134f, #c94b4b);
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
   width: 100%;
   height: 200px;
   position: absolute;
@@ -121,7 +121,7 @@ html {
   height: 200px;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/wallpaper/wallpaperflare(1).jpg");
+  background-image: url("./assets/images/wallpaper/top_wallpaper.png");
   background-size: cover;
   background-position: bottom;
   background-position: center;
@@ -133,9 +133,9 @@ html {
 
 .skill::before {
   content: "";
-  background: #c94b4b;
-  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
-  background: linear-gradient(to right, #4b134f, #c94b4b);
+  background: #485563;
+  background: -webkit-linear-gradient(to right, #29323c, #485563);
+  background: linear-gradient(to right, #29323c, #485563);
   width: 100%;
   height: 200px;
   position: absolute;

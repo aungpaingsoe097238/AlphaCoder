@@ -28,10 +28,10 @@ const About = () => {
                 alt=""
               />
               <div className=" relative">
-                <div className=" flex justify-center items-center text-white text-xl bg-gray-300 w-28 h-28 rounded-full opacity-80 absolute -bottom-10 -left-10">
+                <div className=" flex justify-center items-center text-white text-xl bg-gray-700 w-28 h-28 rounded-full opacity-80 absolute -bottom-10 -left-10">
                   23
                 </div>
-                <div className=" absolute bg-gray-300 w-16 h-16 rounded-full opacity-80 bottom-8 left-3 "></div>
+                <div className=" absolute bg-gray-700 w-16 h-16 rounded-full opacity-80 bottom-8 left-3 "></div>
               </div>
             </div>
           </div>
@@ -56,27 +56,27 @@ const About = () => {
                   <tr>
                     <td className="py-2">Name</td>
                     <td>:</td>
-                    <td>Khaing Zar Ni Maw</td>
+                    <td>Aung Paing Soe</td>
                   </tr>
                   <tr >
                     <td className="py-2">Email</td>
                     <td>:</td>
-                    <td>khaingzarnimaw1996@gmail.com</td>
+                    <td>aungpaingsoe097238@gmail.com</td>
                   </tr>
                   <tr >
                     <td className="py-2">Phone</td>
                     <td>:</td>
-                    <td>080-5160-7234</td>
+                    <td>09-960-187-283</td>
                   </tr>
                   <tr >
                     <td className="py-2">Birthday</td>
                     <td>:</td>
-                    <td>10-6-1996</td>
+                    <td>5-3-2000</td>
                   </tr>
                   <tr >
                     <td className="py-2">Gender</td>
                     <td>:</td>
-                    <td>Female</td>
+                    <td>Male</td>
                   </tr>
                 </tbody>
               </table>
