@@ -5,7 +5,10 @@ import { GrSend } from "react-icons/gr";
 const Contact = () => {
   return (
     <>
-      <div className="my-5 md:my-0 md:h-screen flex flex-col justify-center contact " id="contact">
+      <div
+        className="my-5 md:my-0 md:h-screen flex flex-col justify-center contact "
+        id="contact"
+      >
         <Title title="Contact" subTitle="Get in touch with me" />
         <span className="my-5"></span>
         <div className="flex flex-col md:flex-row gap-5">
@@ -19,7 +22,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  className="write-style"
+                  className="input-text "
                   placeholder="John"
                   required
                 />
@@ -31,7 +34,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  className="write-style"
+                  className="input-text "
                   placeholder="John@example.com"
                   required
                 />
@@ -43,15 +46,16 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows="4"
-                  className="write-style"
+                  className="input-text "
                   placeholder="Write your thoughts here..."
                 ></textarea>
               </div>
               <div className=" w-full text-center">
-                <button className="button-55 active:bg-slate-200" role="button">
-                  <div className=" flex gap-2">
-                    <GrSend className=" text-xl" /> Send Message
-                  </div>
+                <button
+                  className="border border-slate-500 text-slate-500 p-3 active:bg-slate-700 active:text-white"
+                  role="button"
+                >
+                  <div className="flex gap-2">Send Message</div>
                 </button>
               </div>
             </div>
@@ -59,7 +63,8 @@ const Contact = () => {
           </div>
           <div className=" basis-1/2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7496.4794559903685!2d140.02019976208075!3d35.72771209020153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60227ff1024555dd%3A0x2d04a09a512d4490!2sSHISUKA!5e0!3m2!1sen!2smm!4v1676869014695!5m2!1sen!2smm"
+              className=" grayscale-[90%] "
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61079.47671080627!2d96.06268790637493!3d16.9022264047699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195ce696dd4f7%3A0x8e6136e36e0ca442!2sInsein%20Township%2C%20Yangon!5e0!3m2!1sen!2smm!4v1683645616545!5m2!1sen!2smm"
               width="100%"
               height="450"
               allowfullscreen

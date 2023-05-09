@@ -42,7 +42,7 @@ const Home = () => {
         </div>
         <Hobbies />
         <div className="w-[90%] md:w-[70%] mx-auto">
-          <Gallery />
+          {/* <Gallery /> */}
           <Contact />
         </div>
         <Footer />

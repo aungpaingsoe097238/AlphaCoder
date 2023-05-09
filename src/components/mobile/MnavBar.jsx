@@ -10,6 +10,7 @@ import {
 import { VscAccount } from "react-icons/vsc";
 
 const MnavBar = () => {
+
   return (
     <div className=" md:hidden w-screen fixed z-[2] bottom-0 bg-white border border-t-slate-200 ">
       <ul className="flex justify-around items-center pt-2 text-slate-500  ">
@@ -41,19 +42,12 @@ const MnavBar = () => {
           </li>
         </a>
 
-        <a href="#gallery">
-          <li className="m-sidebar-active">
-            <BsImages className=" text-xl " />
-            <span className=" text-xs">Gallery</span>
-          </li>
-        </a>
-
         <a href="#contact">
           <li className="m-sidebar-active">
             <MdContactPhone className=" text-xl " />
             <span className=" text-xs">Contact</span>
           </li>
-        </a>
+        </a> 
       </ul>
     </div>
   );

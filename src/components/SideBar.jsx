@@ -37,12 +37,6 @@ const SideBar = () => {
         </li>
       </a>
 
-      <a href="#gallery">
-        <li className="sideber-active p-1">
-          <BsImages className=" text-2xl text-slate-500" />
-        </li>
-      </a>
-
       <a href="#contact">
         <li className="sideber-active p-1">
           <MdContactPhone className=" text-2xl text-slate-500 " />
