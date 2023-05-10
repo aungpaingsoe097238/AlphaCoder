@@ -14,8 +14,9 @@ import LineTitle from "../../utli/LineTitle";
 import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { SiBootstrap, SiTailwindcss, SiReact, SiMongodb } from "react-icons/si";
+import { SiLaravel } from "react-icons/si";
+import { SiPhp } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
-import { TbHash } from "react-icons/tb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -33,8 +34,8 @@ const AboutScreen = () => {
     { title: "Relagion", text: "Buddha" },
     {
       title: "Address",
-      text: "Aung Zaya Housing, Postal Code(22/301), Insein, Yangon, Myanmar",
-    },
+      text: "Aung Zaya Housing, Postal Code(22/301), Insein, Yangon, Myanmar"
+    }
   ];
 
   const certificates = [
@@ -46,18 +47,17 @@ const AboutScreen = () => {
     { title: "ASP.NET MVC course in C#", text: "loare", img: c6 },
     { title: "ASP.NET MVC course in C#", text: "loare", img: c7 },
     { title: "ASP.NET MVC course in C#", text: "loare", img: c8 },
-    { title: "ASP.NET MVC course in C#", text: "loare", img: c9 },
+    { title: "ASP.NET MVC course in C#", text: "loare", img: c9 }
   ];
 
   const downloadPDF = () => {
-    const downloadLink = document.createElement('a');
-    downloadLink.href =  `http://localhost:5173/resume_aps.pdf`;
-    downloadLink.download = 'resume_aps.pdf';
+    const downloadLink = document.createElement("a");
+    downloadLink.href = `http://localhost:5173/resume_aps.pdf`;
+    downloadLink.download = "resume_aps.pdf";
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
   };
-
 
   return (
     <div className=" w-full overflow-y-auto h-full">
@@ -74,10 +74,15 @@ const AboutScreen = () => {
             </div>
             <div className="my-2">
               <div className=" flex justify-center items-center gap-5 text-slate-700">
-                <BsFacebook className=" text-xl cursor-pointer" />
-                <BsInstagram className=" text-xl cursor-pointer" />
-                <BsLine className=" text-xl cursor-pointer" />
-                <BsGithub className=" text-xl cursor-pointer" />
+                <a href="https://www.facebook.com/aung.p.soe.5437" target="_black">
+                  <BsFacebook className=" text-xl cursor-pointer" />
+                </a>
+                <a href="https://www.instagram.com/aung.p.soe.532/" target="_black">
+                  <BsInstagram className=" text-xl cursor-pointer" />
+                </a>
+                <a href="https://github.com/aungpaingsoe097238" target="_black">
+                  <BsGithub className=" text-xl cursor-pointer" />
+                </a>
               </div>
             </div>
           </div>
@@ -97,7 +102,10 @@ const AboutScreen = () => {
                 </table>
               </div>
               <div>
-                <button className=" py-2 px-3 border border-slate-700 rounded-sm hover:bg-slate-700 hover:text-white " onClick={downloadPDF}>
+                <button
+                  className=" py-2 px-3 border border-slate-700 rounded-sm hover:bg-slate-700 hover:text-white "
+                  onClick={downloadPDF}
+                >
                   Download CV
                 </button>
               </div>
@@ -151,8 +159,15 @@ const AboutScreen = () => {
               <ul className=" flex justify-center gap-6">
                 <li>
                   <div className=" w-[50px] text-center">
-                    <TbHash className=" text-2xl mx-auto" />
-                    <span className="text-xs">C#</span>
+                    <SiPhp className=" text-2xl mx-auto" />
+                    <span className="text-xs">PHP</span>
+                  </div>
+                </li>
+
+                <li>
+                  <div className="w-[50px]  text-center">
+                    <SiLaravel className=" text-2xl mx-auto" />
+                    <span className="text-xs">Laravel</span>
                   </div>
                 </li>
                 <li>
@@ -161,62 +176,51 @@ const AboutScreen = () => {
                     <span className="text-xs">MySQL</span>
                   </div>
                 </li>
-                <li>
-                  <div className="w-[50px]  text-center">
-                    <SiMongodb className=" text-2xl mx-auto" />
-                    <span className="text-xs">MongoDB</span>
-                  </div>
-                </li>
               </ul>
             </div>
           </div>
           <div className=" md:basis-2/3">
-            <div className=" text-md underline text-slate-800 mb-3">Other</div>
-            <p className=" text-slate-700 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              voluptatibus consectetur dolorum omnis. Laboriosam, obcaecati!
-              Nostrum officiis neque repellat, dolorem ea voluptates aut. Omnis
-              ex eos eveniet. Similique, perspiciatis itaque.
+            <div className=" text-md underline text-slate-800 mb-3 ">Other</div>
+            <p className=" text-slate-700 text-sm md:w-[50%]">
+              I can make a beautiful single page website with responsive 
+              using powerfull front-end tools and framework like vite, Nuxt js etc...
+              I can work with team and i have good communication.   
             </p>
           </div>
         </div>
-        <LineTitle title="Education" />
+        <LineTitle title="Experience" />
         <div className=" flex">
           <div className=" basis-1/3">
             <div className=" text-center text-slate-700">
               <div className=" flex flex-col gap-4 text-sm">
-                <div>2012年10月 〜 2016年10月</div>
-                <div>2019年3月 〜 2021年3月</div>
-                <div>2021年4月 〜 2023年3月</div>
+                <div>January 2022 〜 Present</div>
               </div>
             </div>
           </div>
           <div className=" basis-2/3">
             <div className=" flex flex-col gap-4 text-sm text-slate-700">
-              <div>
-                B.A(Geography) Yangon University of Distance Education (Dagon
-                branch)
+              <div className=" font-bold">
+               Marathon Myanmar Company
               </div>
-              <div>国際言葉学院</div>
-              <div>
-                専門学校静岡電子情報カレッジ IT スペシャリスト IT
-                ゲームロボット＆システム学科
+              <div className=" md:w-[50%]">
+                Api development for mobile and admin dashboard using Laravel.And also develop front-end dashboard using NuxtJs.   
               </div>
             </div>
           </div>
         </div>
-        <LineTitle title="Certification" />
+        <LineTitle title="End" />
+        {/* <LineTitle title="Certification" />
         <div className="">
           <div>
             <Swiper
               slidesPerView={1}
               spaceBetween={30}
               pagination={{
-                type: "fraction",
+                type: "fraction"
               }}
               autoplay={{
                 delay: 2500,
-                disableOnInteraction: false,
+                disableOnInteraction: false
               }}
               modules={[Pagination, Autoplay, Navigation]}
               className=""
@@ -246,7 +250,7 @@ const AboutScreen = () => {
               ))}
             </Swiper>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
