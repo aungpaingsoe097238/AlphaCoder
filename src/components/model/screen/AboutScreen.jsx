@@ -1,6 +1,5 @@
 import React from "react";
-import suya from "../../../assets/images/kznm/suya.jpg";
-import photo from "../../../assets/images/kznm/photo.jpg";
+import photo from "../../../assets/images/aps/license.png";
 import c1 from "../../../assets/images/certificate/c1.jpg";
 import c2 from "../../../assets/images/certificate/c2.jpg";
 import c3 from "../../../assets/images/certificate/c3.jpg";
@@ -25,16 +24,16 @@ import { Pagination, Autoplay, Navigation } from "swiper";
 
 const AboutScreen = () => {
   const table_abouts = [
-    { title: "Name", text: "Khaing Zar Ni Maw" },
-    { title: "Email", text: "khaingzarnimaw1996@gmail.com" },
-    { title: "Phone", text: "080-5160-7234" },
-    { title: "Birthday", text: "1996-6-10" },
-    { title: "Gender", text: "Female" },
+    { title: "Name", text: "Aung Paing Soe" },
+    { title: "Email", text: "aungpaingsoe097238@gmail.com" },
+    { title: "Phone", text: "09-960-187-283, 09-683-011-588" },
+    { title: "Birthday", text: "5-3-2000" },
+    { title: "Gender", text: "Male" },
     { title: "Nationality", text: "Burmese" },
     { title: "Relagion", text: "Buddha" },
     {
       title: "Address",
-      text: "〒 160-0007 東京都 新宿区荒木町15番地横内マンション302ホンケマンション２０２号",
+      text: "Aung Zaya Housing, Postal Code(22/301), Insein, Yangon, Myanmar",
     },
   ];
 
@@ -50,6 +49,16 @@ const AboutScreen = () => {
     { title: "ASP.NET MVC course in C#", text: "loare", img: c9 },
   ];
 
+  const downloadPDF = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href =  `http://localhost:5173/resume_aps.pdf`;
+    downloadLink.download = 'resume_aps.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
+
   return (
     <div className=" w-full overflow-y-auto h-full">
       <div className=" my-5 mx-1 md:my-5 md:mx-3 ">
@@ -59,7 +68,7 @@ const AboutScreen = () => {
             <div className="">
               <img
                 src={photo}
-                className=" h-64 mx-auto rounded-sm shadow-sm "
+                className=" h-64 border grayscale-[90%] mx-auto rounded-sm shadow-sm "
                 alt=""
               />
             </div>
@@ -88,7 +97,7 @@ const AboutScreen = () => {
                 </table>
               </div>
               <div>
-                <button className=" py-2 px-3 border border-slate-700 rounded-sm hover:bg-slate-700 hover:text-white ">
+                <button className=" py-2 px-3 border border-slate-700 rounded-sm hover:bg-slate-700 hover:text-white " onClick={downloadPDF}>
                   Download CV
                 </button>
               </div>

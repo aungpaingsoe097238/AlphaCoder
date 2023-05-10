@@ -41,10 +41,9 @@ const About = () => {
                 I'm Aung Paing Soe
               </div>
               <p className="mb-5 text-slate-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti non accusantium alias nemo iure iusto accusamus
-                voluptatum, esse autem, dignissimos expedita totam laborum id
-                culpa sequi ut vitae deleniti officiis.
+                My name is Aung Paing Soe.I can create a Beautiful Website, Web Application using
+                JavaScript,PHP and porpular framework like Laravel, React and Vue.Also I can create 
+                Mobile Applications using React Native.I'm ready for learn latest technologies. 
               </p>
               <button className="button-52" role="button" onClick={handleModel}>
                 More About Me
