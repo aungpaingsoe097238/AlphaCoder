@@ -6,6 +6,16 @@ import Typewriter from "typewriter-effect";
 import Social from "./Social";
 
 const Top = () => {
+
+  const downloadPDF = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href =  `http://localhost:5173/resume_aps.pdf`;
+    downloadLink.download = 'resume_aps.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <div className="h-screen home relative text-white" id="home">
       <div className="flex flex-col justify-center items-center">
@@ -40,9 +50,9 @@ const Top = () => {
           </span>
         </div>
         <div className=" mt-6">
-          <a href="../assets/images/other/resume_aps.pdf" className="button-89" download>
+          <button className="button-89" onClick={downloadPDF}>
             Download CV
-          </a>
+          </button>
         </div>
         {/* Social */}
         <div className="md:absolute md:bottom-[50%] mt-5 md:mt-0 md:left-5">
