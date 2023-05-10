@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
-import About from "./About";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import Gallery from "./Gallery";
-import Hobbies from "./Hobbies";
-import Moti from "./Moti";
-import NavBar from "./NavBar";
-import Portfolio from "./Portfolio";
-import Services from "./Services";
-import Top from "./Top";
-import Skill from "./Skill";
-import MnavBar from "./mobile/MnavBar";
-import Model from "./model/Model";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
+import Hobbies from "../components/Hobbies";
+import Moti from "../components/Moti";
+import NavBar from "../components/NavBar";
+import Portfolio from "../components/Portfolio";
+import Services from "../components/Services";
+import Top from "../components/Top";
+import Skill from "../components/Skill";
+import MnavBar from "../components/mobile/MnavBar";
+import Model from "../components/model/Model";
 import { useSelector } from "react-redux";
 
 const Home = () => {

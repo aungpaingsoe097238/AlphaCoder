@@ -1,8 +1,53 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Title from "../components/utli/Title";
-import { GrSend } from "react-icons/gr";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import "../assets/Loader.css";
 
 const Contact = () => {
+  const [pending, setPending] = useState(false)
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setPending(true)
+    emailjs
+      .sendForm(
+        "service_zpj6fom",
+        "template_7ig565q",
+        form.current,
+        "soR96ieOcIAK5CjJJ"
+      )
+      .then(
+        (result) => {
+          setPending(false)
+          Alert("success", "Email sent successfully");
+        },
+        (error) => {
+          setPending(false)
+          Alert("error", "Failed to send email");
+        }
+      );
+  };
+
+  const Alert = (icon, title) => {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      }
+    });
+    Toast.fire({
+      icon: icon,
+      title: title
+    });
+  };
+
   return (
     <>
       <div
@@ -14,7 +59,11 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row gap-5">
           <div className="basis-1/2">
             {/* Contact Form */}
-            <div className="flex flex-col gap-3">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className=" flex flex-col gap-3"
+            >
               <div>
                 <label for="name" class="label">
                   Your Name
@@ -24,6 +73,7 @@ const Contact = () => {
                   id="name"
                   className="input-text "
                   placeholder="John"
+                  name="from_name"
                   required
                 />
               </div>
@@ -36,9 +86,15 @@ const Contact = () => {
                   id="email"
                   className="input-text "
                   placeholder="John@example.com"
+                  name="from_email"
                   required
                 />
               </div>
+              <input
+                type="hidden"
+                name="user_email"
+                value="AungPaingSoe097238@gmail.com"
+              />
               <div>
                 <label for="message" class="label">
                   Your message
@@ -48,6 +104,8 @@ const Contact = () => {
                   rows="4"
                   className="input-text "
                   placeholder="Write your thoughts here..."
+                  name="message"
+                  required
                 ></textarea>
               </div>
               <div className=" w-full text-center">
@@ -55,10 +113,15 @@ const Contact = () => {
                   className="border border-slate-500 text-slate-500 p-3 active:bg-slate-700 active:text-white"
                   role="button"
                 >
-                  <div className="flex gap-2">Send Message</div>
+                  <div className=" flex gap-2 justify-center items-center">
+                    {
+                      pending && <span className="pending w-[20px] h-[20px]"></span>
+                    }
+                    Send Message
+                  </div>
                 </button>
               </div>
-            </div>
+            </form>
             {/* Contact Form */}
           </div>
           <div className=" basis-1/2">

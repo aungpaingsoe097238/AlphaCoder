@@ -40,9 +40,9 @@ const Top = () => {
           </span>
         </div>
         <div className=" mt-6">
-          <button className="button-89" role="button">
+          <a href="../assets/images/other/resume_aps.pdf" className="button-89" download>
             Download CV
-          </button>
+          </a>
         </div>
         {/* Social */}
         <div className="md:absolute md:bottom-[50%] mt-5 md:mt-0 md:left-5">
