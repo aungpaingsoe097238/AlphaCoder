@@ -17,23 +17,15 @@ const Portfolio = () => {
       id="portfolio"
     >
       <Title title="Portfolio" subTitle="Work do so far" />
-      <div>
-        <p className=" mt-5 text-gray-500 text-sm">
-          Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
-          vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
-          adilip litora torquent per conubia nostra, per inceptos himenaeos.
-          Mauris in erat justo.
-        </p>
-      </div>
       <div className=" md:hidden">
         <ProjectSwiper media="1" />
       </div>
       <div className=" hidden md:block ">
         <ProjectSwiper media="3" />
       </div>
-      <div className=" text-center font-bold text-slate-700">
-        <span className=" cursor-pointer" onClick={handleOpenProjectModel}>
-          show all projects
+      <div className=" text-center ">
+        <span className=" text-sm  text-slate-700 " >
+          Other projects can be explored <span className="underline cursor-pointer font-bold hover:text-slate-500 " onClick={handleOpenProjectModel}>Click Here</span>
         </span>
       </div>
     </div>
