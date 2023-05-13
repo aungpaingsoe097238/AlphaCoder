@@ -45,7 +45,7 @@ const ProjectSwiper = (props) => {
                 <p>{project.title}</p>
                 <div className=" flex justify-center items-center gap-1">
                   <a href={ project.github } target="_black">
-                    <AiFillGithub className=" text-2xl cursor-pointer hover:text-slate-500 " />
+                    <AiFillGithub className={ project.github === "" ? 'text-2xl cursor-not-allowed opacity-50' : 'text-2xl cursor-pointer hover:text-slate-500'} />
                   </a>
                   <a href={ project.url } target="_black">
                     <AiOutlineArrowRight className=" text-2xl cursor-pointer hover:text-slate-500" />

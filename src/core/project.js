@@ -5,6 +5,7 @@ import Girl from "../assets/images/wallpaper/girl.png";
 import Girl2 from "../assets/images/wallpaper/girl2.png";
 import Girl3 from "../assets/images/wallpaper/girl3.png";
 import alpha from "../assets/images/projects/alpha.png"
+import mkitchen from "../assets/images/projects/mkitchen.png"
 
 const projectData = [
     {
@@ -18,6 +19,20 @@ const projectData = [
         'Vue2',
         'FireBase',
         'VueBootStrap'
+      ]
+    },
+    {
+      title: "Mkitchen",
+      image: mkitchen,
+      url: "https://testing.mkitchen.com.mm/dashboard",
+      github: "",
+      text: "This is ecomerce project.You can login with userName is super_admin and password is secret123",
+      tools: [
+        'JavaScript',
+        'NuxtJs',
+        'Laravel',
+        'Vuetify',
+        'Tailwind'
       ]
     },
   ];
