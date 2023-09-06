@@ -126,7 +126,7 @@ const Contact = () => {
           </div>
           <div className=" basis-1/2">
             <iframe
-              className=" grayscale-[90%] "
+              className=" border border-slate-500"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61079.47671080627!2d96.06268790637493!3d16.9022264047699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195ce696dd4f7%3A0x8e6136e36e0ca442!2sInsein%20Township%2C%20Yangon!5e0!3m2!1sen!2smm!4v1683645616545!5m2!1sen!2smm"
               width="100%"
               height="450"

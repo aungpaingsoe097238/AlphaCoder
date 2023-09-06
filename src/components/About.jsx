@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import AboutImg from "../assets/images/aps/about.png";
+import Profile from '../assets/images/aps/profile-aps.png'
 import { addState } from "../features/services/modelSlice";
 import Title from "./utli/Title";
 
 const About = () => {
-
   const dispatch = useDispatch();
 
   const handleModel = () => {
-    dispatch(addState({ screen : 'about' }));
-  }
+    dispatch(addState({ screen: "about" }));
+  };
 
   return (
     <>
@@ -23,15 +23,15 @@ const About = () => {
           <div className=" basis-1/3 ">
             <div className=" ">
               <img
-                src={AboutImg}
-                className="h-[400px] w-max-[100%] border  rounded-lg shadow-sm grayscale-[90%] "
+                src={Profile}
+                className="h-[400px] w-max-[100%] border border-slate-200 shadow-sm "
                 alt=""
               />
               <div className=" relative">
-                <div className=" flex justify-center items-center text-white text-xl bg-gray-700 w-28 h-28 rounded-full opacity-80 absolute -bottom-10 -left-10">
-                  23
+                <div className=" flex justify-center items-center text-white text-xl bg-sky-900 w-28 h-28 rounded-full opacity-80 absolute -bottom-10 -left-10">
+                  23 yr
                 </div>
-                <div className=" absolute bg-gray-700 w-16 h-16 rounded-full opacity-80 bottom-8 left-3 "></div>
+                <div className=" absolute bg-sky-900 w-16 h-16 rounded-full opacity-80 bottom-8 left-3 "></div>
               </div>
             </div>
           </div>
@@ -41,9 +41,10 @@ const About = () => {
                 I'm Aung Paing Soe
               </div>
               <p className="mb-5 text-slate-500">
-                My name is Aung Paing Soe.I can create a Beautiful Website, Web Application using
-                JavaScript,PHP and porpular framework like Laravel, React and Vue.Also I can create 
-                Mobile Applications using React Native.I'm ready for learn latest technologies. 
+                My name is Aung Paing Soe.I can create a Beautiful Website, Web
+                Application using JavaScript,PHP and porpular framework like
+                Laravel, React and Vue.Also I can create Mobile Applications
+                using React Native.I'm ready for learn latest technologies.
               </p>
               <button className="button-52" role="button" onClick={handleModel}>
                 More About Me
@@ -57,22 +58,22 @@ const About = () => {
                     <td>:</td>
                     <td>Aung Paing Soe</td>
                   </tr>
-                  <tr >
+                  <tr>
                     <td className="py-2">Email</td>
                     <td>:</td>
                     <td>aungpaingsoe097238@gmail.com</td>
                   </tr>
-                  <tr >
+                  <tr>
                     <td className="py-2">Phone</td>
                     <td>:</td>
                     <td>09-960-187-283</td>
                   </tr>
-                  <tr >
+                  <tr>
                     <td className="py-2">Birthday</td>
                     <td>:</td>
                     <td>5-3-2000</td>
                   </tr>
-                  <tr >
+                  <tr>
                     <td className="py-2">Gender</td>
                     <td>:</td>
                     <td>Male</td>

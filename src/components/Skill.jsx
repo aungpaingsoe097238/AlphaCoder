@@ -1,11 +1,18 @@
 import React from "react";
 import "../assets/skill.css";
-import { AiFillHtml5 } from "react-icons/ai";
-import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
-import { SiBootstrap, SiTailwindcss, SiReact, SiMongodb } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import {
+  SiBootstrap,
+  SiTailwindcss,
+  SiReact,
+  SiNuxtdotjs,
+  SiNextcloud,
+} from "react-icons/si";
 import { SiLaravel } from "react-icons/si";
-import { SiPhp } from "react-icons/si"
-import { GrMysql } from "react-icons/gr"
+import { SiPhp } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { TbBrandNuxt, TbBrandNextjs } from "react-icons/tb";
+import { FaVuejs } from "react-icons/fa";
 
 const Skill = () => {
   return (
@@ -14,29 +21,55 @@ const Skill = () => {
         <span className=" italic font-bold">- Skills -</span>
       </div>
       <ul className="flex md:flex-row text-xs md:text-sm md:gap-10 gap-2">
-        
         <div className=" md:flex md:gap-10">
-          <li>
-            <div className="flex gap-1 items-center font-bold">
-              <AiFillHtml5 className=" text-2xl" />
-              Html
-            </div>
-          </li>
-          <li>
-            <div className="flex gap-1 items-center font-bold">
-              <IoLogoCss3 className=" text-2xl" />
-              Css
-            </div>
-          </li>
           <li>
             <div className="flex gap-1 items-center font-bold">
               <IoLogoJavascript className=" text-2xl" />
               JavaScript
             </div>
           </li>
+          <li>
+            <div className="flex gap-1 items-center font-bold">
+              <SiReact className=" text-2xl" />
+              React
+            </div>
+          </li>
+          <li>
+            <div className="flex gap-1 items-center font-bold">
+              <FaVuejs className=" text-2xl" />
+              Vue
+            </div>
+          </li>
         </div>
 
         <div className=" md:flex md:gap-10">
+          <li>
+            <div className="flex gap-1 items-center font-bold">
+              <SiNuxtdotjs className=" text-2xl" />
+              Nuxt3
+            </div>
+          </li>
+          <li>
+            <div className="flex gap-1 items-center font-bold">
+              <TbBrandNextjs className=" text-2xl" />
+              Next
+            </div>
+          </li>
+          <li>
+            <div className="flex gap-1 items-center font-bold">
+              <SiPhp className=" text-2xl" />
+              PHP
+            </div>
+          </li>
+        </div>
+
+        <div className=" md:flex md:gap-10">
+          <li>
+            <div className="flex gap-1 items-center font-bold">
+              <SiLaravel className=" text-2xl" />
+              Laravel
+            </div>
+          </li>
           <li>
             <div className="flex gap-1 items-center font-bold">
               <SiBootstrap className=" text-2xl" />
@@ -49,35 +82,7 @@ const Skill = () => {
               Tailwind
             </div>
           </li>
-          <li>
-            <div className="flex gap-1 items-center font-bold">
-              <SiReact className=" text-2xl" />
-              React
-            </div>
-          </li>
         </div>
-
-        <div className=" md:flex md:gap-10">
-          <li>
-            <div className="flex gap-1 items-center font-bold">
-              <SiPhp className=" text-2xl" />
-              PHP
-            </div>
-          </li>
-          <li>
-            <div className="flex gap-1 items-center font-bold">
-              <SiLaravel className=" text-2xl" />
-              Laravel
-            </div>
-          </li>
-          <li>
-            <div className="flex gap-1 items-center font-bold">
-              <GrMysql className=" text-2xl" />
-              Mysql
-            </div>
-          </li>
-        </div>
-
       </ul>
     </div>
   );

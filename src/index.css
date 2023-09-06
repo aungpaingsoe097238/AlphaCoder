@@ -35,10 +35,11 @@ html {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/aps/hero.jpg");
+  background-image: url("./assets/images/aps/backdrop-aps.png");
   background-size: cover;
   background-position: bottom;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
   z-index: 3;
 }
@@ -64,7 +65,7 @@ html {
   height: 200px;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/wallpaper/top_wallpaper.png");
+  background-image: url("./assets/images/aps/backdrop-aps.png");
   background-size: cover;
   background-position: bottom;
   background-position: center;
@@ -92,7 +93,7 @@ html {
   height: 200px;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/wallpaper/top_wallpaper.png");
+  background-image: url("./assets/images/aps/backdrop-aps.png");
   background-size: cover;
   background-position: bottom;
   background-position: center;
@@ -120,7 +121,7 @@ html {
   height: 200px;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/wallpaper/top_wallpaper.png");
+  background-image: url("./assets/images/aps/backdrop-aps.png");
   background-size: cover;
   background-position: bottom;
   background-position: center;

@@ -1,6 +1,6 @@
 import React from "react";
 import { CgArrowLongRightC, CgArrowLongLeftC } from "react-icons/cg";
-import { BsMouse } from "react-icons/bs";
+import { CiDesktopMouse2 } from "react-icons/ci";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Typewriter from "typewriter-effect";
 import Social from "./Social";
@@ -9,6 +9,7 @@ const Top = () => {
 
   const downloadPDF = () => {
     const downloadLink = document.createElement('a');
+    downloadLink.target = "_black";
     downloadLink.href =  `https://alphacoder.onrender.com/resume_aps.pdf`;
     downloadLink.download = 'resume_aps.pdf';
     document.body.appendChild(downloadLink);
@@ -51,7 +52,7 @@ const Top = () => {
         </div>
         <div className=" mt-6">
           <button className="button-89" onClick={downloadPDF}>
-            Download CV
+            My Resume
           </button>
         </div>
         {/* Social */}
@@ -61,8 +62,8 @@ const Top = () => {
         {/* Social */}
         <div>
           <a href="#about">
-            <span className="absolute bottom-10 flex flex-col justify-center items-center gap-1 cursor-pointer hover:text-gray-800 z-50 ">
-              <BsMouse className=" text-3xl animate__animated animate__bounce animate__infinite infinite" />
+            <span className="absolute bottom-1 flex flex-col justify-center items-center cursor-pointer hover:text-gray-800 z-50 ">
+              <CiDesktopMouse2 className=" text-3xl animate__animated animate__bounce animate__infinite infinite" />
               <RiArrowDropDownLine className=" font-semibold text-3xl" />
             </span>
           </a>
