@@ -9,7 +9,7 @@ const Top = () => {
 
   const downloadPDF = () => {
     const downloadLink = document.createElement('a');
-    downloadLink.href =  `https://aps.onrender.com/resume_aps.pdf`;
+    downloadLink.href =  `https://alphacoder.onrender.com/resume_aps.pdf`;
     downloadLink.download = 'resume_aps.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();

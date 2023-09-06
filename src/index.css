@@ -35,13 +35,12 @@ html {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/images/wallpaper/top_wallpaper.png");
+  background-image: url("./assets/images/aps/hero.jpg");
   background-size: cover;
   background-position: bottom;
   background-position: center;
   position: relative;
   z-index: 3;
-  background-attachment: fixed;
 }
 
 .home::before {

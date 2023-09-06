@@ -15,7 +15,7 @@ const NavBar = () => {
     <nav className="w-full py-2  fixed top-0 z-10 bg-white  text-slate-500 hidden md:block">
       <div className="w-[70%] mx-auto flex justify-between items-center">
         <div className="text-xl font-semibold">
-          <span className=" text-xl ">AungLay</span>
+          <span className=" text-xl ">Alpha</span>
         </div>
         <div className=" active:bg-slate-200 rounded-full p-1" onClick={handleSideBar}>
           <TiThMenuOutline
