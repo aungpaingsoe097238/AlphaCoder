@@ -27,6 +27,13 @@ const projectData = [
     text: "Video learning plaform like udmey.This is currently developing.",
     tools: ["JavaScript", "Nuxt3", "Laravel9", "BootStrap5"],
   },
+  {
+    title: "The Explorer",
+    image: explorer,
+    url: "https://explorer.aungpaingsoe.com/",
+    text: "A Simple Blog website project.",
+    tools: ["PHP","Laravel9","BootStrap5","JavaScript"]
+  }
 ];
 
 export default projectData;
