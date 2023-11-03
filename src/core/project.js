@@ -1,7 +1,7 @@
 import desktop from "../assets/images/projects/Desktop.png";
 import ooak from "../assets/images/projects/ooak.png";
 import coursia from "../assets/images/projects/Coursia.png";
-import explorer from "../assets/images/project/explorer.png";
+import explorer from "../assets/images/projects/explorer.png";
 
 const projectData = [
   {
